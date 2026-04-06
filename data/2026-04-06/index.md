@@ -4,6 +4,7 @@
 
 | 分類 | 篇數 | 重點內容 |
 |------|------|----------|
+| [Skill 開發指南](./skill-development/summary.md) | 3 | **完整教學：** 建立、測試、部署 Skill 的官方最佳實踐 |
 | [Claude Code](./claude-code/summary.md) | 20 | MagicDocs 移除分析、System Prompt 解析、社群 Skills、LLM Router |
 | [Prompt Engineering](./prompt-engineering/summary.md) | 5 | 官方最佳實踐、15 種模式、FORGE 方法、每日 5 技巧 |
 | [生產力案例](./productivity/summary.md) | 8 | Opus 9 大優勢、終端機日常化、用量限制應對 |
