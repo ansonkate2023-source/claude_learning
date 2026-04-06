@@ -22,5 +22,110 @@
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNVFONFRZNGFlQUpENU9xbHNQYWlqSXdjT1FReHhKN0VCVmwteGFQdFBraDl5Ni1VRXBJNlo1cHM2ZDBQVTNfQjIxamNubU5kU0NCTTFzSHQ2cDVzakVmVzVVMk1PYkd5dkYydFlxYTVYNy1GZGRtUXpySlFhYmpIZEp5MS0yVTdHam53",
     "source": "Blockchain Council",
     "published": "2026-03-23"
+  },
+  {
+    "title": "How Claude Code builds a system prompt",
+    "url": "https://www.dbreunig.com/2026/04/04/how-claude-code-builds-a-system-prompt.html",
+    "source": "dbreunig.com",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Show HN: Grug – Claude Code Skill Inspired by the Grug Brained Developer",
+    "url": "https://github.com/replete/grug-skill",
+    "source": "Hacker News",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Show HN: Crabby – Claude Code skill that reviews code like the Rust compiler",
+    "url": "https://news.ycombinator.com/item?id=47649301",
+    "source": "Hacker News",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "/Render – 3D Model Skill for Claude Code",
+    "url": "https://github.com/mfranzon/render",
+    "source": "Hacker News",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Building an AI Image Creator Skill for Claude Code",
+    "url": "https://ai.georgeliu.com/p/building-an-ai-image-creator-skill",
+    "source": "ai.georgeliu.com",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
+    "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
+    "source": "ai.georgeliu.com",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "LLM Router – MCP server that routes Claude Code tasks to cheaper models",
+    "url": "https://github.com/ypollak2/llm-router",
+    "source": "Hacker News",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Show HN: VibeAround – Talk to Claude Code from Telegram and Hand over Sessions",
+    "url": "https://github.com/jazzenchen/VibeAround",
+    "source": "Hacker News",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Tandem: An IDE for non-code docs for real-time collaboration with Claude Code",
+    "url": "https://github.com/bloknayrb/tandem",
+    "source": "Hacker News",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Show HN: Magma Memory – Claude Browser cloaking tool with memory",
+    "url": "https://github.com/Vektor-Memory/Vektor-memory",
+    "source": "Hacker News",
+    "published": "2026-04-06",
+    "new": true
+  },
+  {
+    "title": "Claude Code skill to preserve traditional Unix style conventions",
+    "url": "https://github.com/agiacalone/unix-conventions",
+    "source": "Hacker News",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Show HN: See How You Talk to Claude Code",
+    "url": "https://prophetic-tacky-bison.instavm.site/",
+    "source": "Hacker News",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Show HN: AI-agent instructions to restore Claude Pro/Max in OpenCode",
+    "url": "https://github.com/jcubic/opencode-claude-plan",
+    "source": "Hacker News",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Claude Code auto mode: a safer way to skip permissions",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9wdDVZM253Y25vNDF5eHYwVmltcUlBTjk5TF9zcW5sOVh4NExDUkU4WFVmZnNUbGhpN3dUMnlpNFkxVVY2NEJWcmQ4dWVXU2pEMllJbmc1QWJucHFfMVB2QjYtVUhVaTJ1T3g0",
+    "source": "Anthropic 官方",
+    "published": "2026-03-25",
+    "new": true
+  },
+  {
+    "title": "I used Claude Code, Antigravity, and Perplexity Computer to build a portfolio — there was a clear winner",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeVEtWG5JT2I0OF9SSzJWR2lIZmwyN3o5NVRoeThoOXJKY3ZFNGw4LVpZbFJzaml3TmtNLUZEN0F3a3dEQk4xZThwaWtWQldjbzJFQzJmTDdPZ0hwSlZRbWJNbnU0SmRFTXp2Z18yOHpxVmpUYmtVLWV6elFsN3JGdjdvU3VvVThVbmhLUnZMU0FMSmlrMG8talFwRmI1UUhFN0dmZFNtUGc",
+    "source": "XDA",
+    "published": "2026-04-05",
+    "new": true
   }
 ]

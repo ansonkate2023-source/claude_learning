@@ -150,3 +150,119 @@ Claude 4.6 會自動判斷何時需要委派子任務給 sub-agent：
 [完整清單需進一步查閱]
 
 **難度：** 入門～專家
+
+---
+
+## 七、System Prompt 解析（新）
+
+來源：dbreunig.com「How Claude Code builds a system prompt」
+
+深度分析 Claude Code 如何建構 system prompt：
+- 揭示 Claude Code 的內部 prompt 組裝邏輯
+- 理解各層 prompt 的優先級和作用
+- 學習如何更好地配合 Claude Code 的 prompt 結構
+
+**可馬上用：** 了解 system prompt 結構後，寫出更精確的 CLAUDE.md
+
+**難度：** 進階
+
+---
+
+## 八、社群熱門 Skills 精選（新）
+
+### Grug Skill — 簡單至上的開發哲學
+來源：[github.com/replete/grug-skill](https://github.com/replete/grug-skill)
+
+基於「Grug Brained Developer」哲學的 Claude Code skill：
+- 強調簡單、直接、避免過度工程
+- 適合想減少 Claude 過度設計傾向的開發者
+
+**難度：** 入門
+
+### Crabby — 像 Rust 編譯器一樣審查程式碼
+來源：Hacker News
+
+讓 Claude 以 rustc 錯誤格式輸出診斷回饋：
+- 精確的建議和修復方案
+- 適合 Rust 開發者或喜歡嚴格審查的團隊
+
+**難度：** 進階
+
+### /Render — 3D 模型技能
+來源：[github.com/mfranzon/render](https://github.com/mfranzon/render)
+
+讓 Claude Code 具備 3D 模型渲染和視覺化能力。
+
+**難度：** 進階
+
+### AI Image Creator Skill — 圖像生成教學
+來源：ai.georgeliu.com
+
+完整教學：如何為 Claude Code 開發圖像生成技能。
+
+**可馬上用：** 按照教學步驟建立自己的圖像生成 skill
+
+**難度：** 進階
+
+### Unix Conventions Skill — 保持 Unix 風格
+來源：[github.com/agiacalone/unix-conventions](https://github.com/agiacalone/unix-conventions)
+
+讓 Claude Code 遵循傳統 Unix 設計原則。
+
+**難度：** 入門
+
+---
+
+## 九、進階整合工具（新）
+
+### LLM Router — 將任務路由到更便宜的模型
+來源：[github.com/ypollak2/llm-router](https://github.com/ypollak2/llm-router)
+
+MCP server，自動將 Claude Code 任務分配到成本更低的模型：
+- 節省 API 費用
+- 簡單任務用小模型，複雜任務用 Opus
+
+**可馬上用：** 安裝後立即降低 Claude Code 使用成本
+
+**難度：** 進階
+
+### VibeAround — 從 Telegram 操作 Claude Code
+來源：[github.com/jazzenchen/VibeAround](https://github.com/jazzenchen/VibeAround)
+
+Telegram 整合，支援 session 移交：
+- 手機上遠端控制 Claude Code
+- 多裝置之間無縫切換
+
+**難度：** 進階
+
+### Tandem — 非程式碼文件的即時協作 IDE
+來源：[github.com/bloknayrb/tandem](https://github.com/bloknayrb/tandem)
+
+專為文件協作設計的 IDE，與 Claude Code 整合：
+- 適合文件撰寫、規劃、筆記
+- 即時協作功能
+
+**難度：** 入門
+
+### Running Gemma 4 locally with Claude Code
+來源：ai.georgeliu.com
+
+教學：使用 LM Studio 的 headless CLI 在本地運行 Gemma 4，並與 Claude Code 整合：
+- 本地 LLM + Claude Code 的混合工作流
+- 降低 API 依賴
+
+**可馬上用：** 安裝 LM Studio → 下載 Gemma 4 → 配合 Claude Code 使用
+
+**難度：** 專家
+
+---
+
+## 十、Claude Code 與競品比較（新）
+
+來源：XDA「I used Claude Code, Antigravity, and Perplexity Computer to build a portfolio」
+
+實測比較 Claude Code vs Antigravity vs Perplexity Computer：
+- Claude Code 在專案建構上被評為最佳
+- 優勢：更強的程式碼品質和上下文理解
+
+**難度：** 入門
