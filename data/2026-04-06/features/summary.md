@@ -124,3 +124,30 @@ Anthropic 的 Mythos 模型發展帶來新的 AI 安全挑戰：
 - 也暴露了開源社群對 AI 工具透明度的需求
 
 **難度：** 入門
+
+---
+
+## 九、Computer Use — Claude 可以操作你的電腦（新）
+
+來源：MSN
+
+Anthropic 推出 Claude 的 Computer Use 功能：
+- Claude 能直接操作電腦介面完成任務
+- 包括點擊、輸入、截圖、導航等操作
+- 從 AI 助理邁向 AI Agent 的重要一步
+
+**可馬上用：** 適合自動化 GUI 操作、表單填寫、跨應用工作流
+
+**難度：** 進階
+
+---
+
+## 十、Claude Mythos — 洩露揭示的秘密模型（新）
+
+來源：MSN
+
+源碼洩露意外曝光 Anthropic 尚未發布的 Claude Mythos 模型：
+- 暗示下一代模型的能力方向
+- 可能帶來更強的推理和安全特性
+
+**難度：** 入門（了解即可）

@@ -7,19 +7,18 @@
 | [Claude Code](./claude-code/summary.md) | 19 | System Prompt 解析、社群 Skills（Grug/Crabby/Render）、LLM Router、Telegram 整合 |
 | [Prompt Engineering](./prompt-engineering/summary.md) | 5 | 官方最佳實踐、15 種模式、FORGE 方法、每日 5 技巧 |
 | [生產力案例](./productivity/summary.md) | 8 | Opus 9 大優勢、終端機日常化、用量限制應對 |
-| [官方最佳實踐](./best-practices/summary.md) | 3 | 輸出控制、Agent 系統、防止過度工程 |
-| [新功能與更新](./features/summary.md) | 6 | Adaptive Thinking、Mythos 模型、源碼 GitHub 紀錄 |
+| [官方最佳實踐](./best-practices/summary.md) | 4 | 輸出控制、Agent 系統、13 語言效能基準測試 |
+| [新功能與更新](./features/summary.md) | 8 | Computer Use、Mythos 模型、Adaptive Thinking |
 | [Claude 新聞](./Claude/summary.md) | 17 | 源碼洩露事件、市場動態、政治活動 |
 
-**總計：** 58 篇學習資源 + 17 篇新聞
+**總計：** 61 篇學習資源 + 17 篇新聞
 
-## 本次更新新增（第 4 輪收集）
+## 本次更新新增（第 5 輪收集）
 
-### 新增 4 篇：
-- **終端機日常化** — Claude Code 如何改變每日終端機使用習慣（XDA）
-- **用量限制應對** — 用量耗盡速度超預期的應對策略（BBC）
-- **Mythos 模型** — 新模型帶來的安全挑戰（The Information）
-- **GitHub 紀錄** — 洩露源碼成為史上最快增長 repo（Cybernews）
+### 新增 3 篇：
+- **13 語言效能基準測試** — 動態語言在 Claude Code 中更快更便宜（InfoQ）
+- **Computer Use** — Claude 可直接操作電腦介面完成任務（MSN）
+- **Claude Mythos** — 洩露揭示的秘密模型細節（MSN）
 
 ## 今日重點學習
 

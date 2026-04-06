@@ -149,3 +149,21 @@ Claude 預設會產出通用的設計。要獲得更好的前端：
 4. 進階工作流程（hooks、MCP）
 5. Agent 系統設計
 6. API 整合開發
+
+---
+
+## 八、13 語言 Claude Code 效能基準測試（新）
+
+來源：InfoQ「Dynamic Languages Faster and Cheaper in 13-Language Claude Code Benchmark」
+
+重要發現：
+- **動態語言（Python、JS）在 Claude Code 中更快且更便宜**
+- 編譯語言（Rust、Go）在某些場景下 token 消耗更高
+- 選擇正確的語言可以顯著影響 Claude Code 的效率和成本
+
+**可馬上用的建議：**
+- 原型開發和腳本任務優先用 Python / JavaScript
+- 只在效能關鍵的場景才讓 Claude Code 用編譯語言
+- 根據任務類型選擇語言，而非習慣
+
+**難度：** 進階

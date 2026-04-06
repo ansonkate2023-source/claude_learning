@@ -36,5 +36,19 @@
     "source": "Cybernews",
     "published": "2026-04-01",
     "new": true
+  },
+  {
+    "title": "Anthropic says Claude can now use your computer to finish tasks for you",
+    "url": "https://www.msn.com/en-us/news/anthropic-claude-computer-use/",
+    "source": "MSN",
+    "published": "2026-04-06",
+    "new": true
+  },
+  {
+    "title": "Data leak reveals Anthropic's latest secret model, Claude Mythos",
+    "url": "https://www.msn.com/en-us/news/anthropic-claude-mythos-model/",
+    "source": "MSN",
+    "published": "2026-04-06",
+    "new": true
   }
 ]
