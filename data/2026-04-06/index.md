@@ -6,21 +6,20 @@
 |------|------|----------|
 | [Claude Code](./claude-code/summary.md) | 19 | System Prompt 解析、社群 Skills（Grug/Crabby/Render）、LLM Router、Telegram 整合 |
 | [Prompt Engineering](./prompt-engineering/summary.md) | 5 | 官方最佳實踐、15 種模式、FORGE 方法、每日 5 技巧 |
-| [生產力案例](./productivity/summary.md) | 6 | Opus 9 大優勢、消除重複工作、資料科學流程 |
+| [生產力案例](./productivity/summary.md) | 8 | Opus 9 大優勢、終端機日常化、用量限制應對 |
 | [官方最佳實踐](./best-practices/summary.md) | 3 | 輸出控制、Agent 系統、防止過度工程 |
-| [新功能與更新](./features/summary.md) | 4 | Adaptive Thinking、OpenClaw 定價、情感研究 |
+| [新功能與更新](./features/summary.md) | 6 | Adaptive Thinking、Mythos 模型、源碼 GitHub 紀錄 |
 | [Claude 新聞](./Claude/summary.md) | 17 | 源碼洩露事件、市場動態、政治活動 |
 
-**總計：** 54 篇學習資源 + 17 篇新聞
+**總計：** 58 篇學習資源 + 17 篇新聞
 
-## 本次更新新增（第 3 輪收集）
+## 本次更新新增（第 4 輪收集）
 
-### Claude Code 新增 15 篇：
-- **System Prompt 解析** — 揭示 Claude Code 內部 prompt 組裝邏輯
-- **社群 Skills** — Grug（簡單哲學）、Crabby（Rust 審查）、Render（3D）、Image Creator、Unix Conventions
-- **整合工具** — LLM Router（省錢）、VibeAround（Telegram）、Tandem（文件協作）
-- **本地 LLM** — Gemma 4 + Claude Code 混合工作流
-- **競品比較** — Claude Code vs Antigravity vs Perplexity Computer
+### 新增 4 篇：
+- **終端機日常化** — Claude Code 如何改變每日終端機使用習慣（XDA）
+- **用量限制應對** — 用量耗盡速度超預期的應對策略（BBC）
+- **Mythos 模型** — 新模型帶來的安全挑戰（The Information）
+- **GitHub 紀錄** — 洩露源碼成為史上最快增長 repo（Cybernews）
 
 ## 今日重點學習
 

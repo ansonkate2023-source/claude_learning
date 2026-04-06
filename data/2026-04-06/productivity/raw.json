@@ -34,5 +34,19 @@
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVDdrTkZmSnBMQUlHdGkyQ3JuSWRmZGJVTmVRTUNnSnhUdXB1ZURHYnNpMnBxazRkSTdCdnpkczBYcWUxY1NRNFgxWVdKOXljY3lrM1RTdm5WMjRsWUJUN2lPcm5pUkszWVBjcURMRjBtYkNrWTVOYm9pMnlmVm5sMTZybXpOQ29pSjJ3QlEtS0tidGxGaTVJTmFyZEdOclo0bFJ5T3RIUEtXZw",
     "source": "Tom's Guide",
     "published": "2026-03-04"
+  },
+  {
+    "title": "Claude Code turned my terminal into something I actually use every day",
+    "url": "https://www.xda-developers.com/claude-code-terminal-daily-use/",
+    "source": "XDA",
+    "published": "2026-04-05",
+    "new": true
+  },
+  {
+    "title": "Claude Code users hitting usage limits 'way faster than expected'",
+    "url": "https://www.bbc.com/news/technology-claude-code-limits",
+    "source": "BBC",
+    "published": "2026-04-01",
+    "new": true
   }
 ]

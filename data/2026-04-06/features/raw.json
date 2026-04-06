@@ -22,5 +22,19 @@
     "url": "https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing/",
     "source": "TechCrunch",
     "published": "2026-03-28"
+  },
+  {
+    "title": "Anthropic 'Mythos' Model Signals New Era of AI Cybersecurity Risks",
+    "url": "https://www.theinformation.com/articles/anthropic-mythos-model",
+    "source": "The Information",
+    "published": "2026-04-02",
+    "new": true
+  },
+  {
+    "title": "Leaked Claude Code source spawns fastest growing repository in GitHub's history",
+    "url": "https://cybernews.com/news/claude-code-leak-github-fastest-growing/",
+    "source": "Cybernews",
+    "published": "2026-04-01",
+    "new": true
   }
 ]

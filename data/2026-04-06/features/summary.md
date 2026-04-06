@@ -100,3 +100,27 @@
 ### 何時選 Opus vs Sonnet：
 - **Opus 4.6** — 最難、最長的任務（大規模遷移、深度研究）
 - **Sonnet 4.6** — 需要快速回應和成本效率的場景
+
+---
+
+## 七、Mythos 模型與安全風險（新）
+
+來源：The Information
+
+Anthropic 的 Mythos 模型發展帶來新的 AI 安全挑戰：
+- 模型能力越強，潛在的安全風險越大
+- 需要新的安全框架來應對
+
+**難度：** 專家
+
+---
+
+## 八、Claude Code 源碼成為 GitHub 史上最快增長的 Repo（新）
+
+來源：Cybernews
+
+洩露的 Claude Code 源碼在 GitHub 上創下增長紀錄：
+- 反映開發者對 Claude Code 內部運作的高度興趣
+- 也暴露了開源社群對 AI 工具透明度的需求
+
+**難度：** 入門

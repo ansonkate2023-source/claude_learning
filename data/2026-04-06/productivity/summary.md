@@ -121,3 +121,34 @@ Claude 的核心差異化：
 - **更自然的對話風格** — 減少機器感
 
 **難度：** 入門
+
+---
+
+## 八、Claude Code 讓終端機變成每日工具（新）
+
+來源：XDA「Claude Code turned my terminal into something I actually use every day」
+
+使用者實測分享：
+- Claude Code 如何改變日常終端機使用習慣
+- 從偶爾使用到每天依賴的轉變
+- 實際工作流程改善案例
+
+**可馬上用：** 嘗試在終端機中用 Claude Code 處理你最常做的任務
+
+**難度：** 入門
+
+---
+
+## 九、使用量限制應對策略（新）
+
+來源：BBC「Claude Code users hitting usage limits 'way faster than expected'」
+
+使用者反映 Claude Code 用量耗盡速度超出預期：
+- 了解用量計算方式，避免不必要的消耗
+- 策略：使用 LLM Router 將簡單任務路由到便宜模型
+- 策略：善用 `/compact` 壓縮對話，減少 token 消耗
+- 策略：精簡 prompt，避免冗餘上下文
+
+**可馬上用：** 檢查你的用量模式，找出最耗 token 的操作
+
+**難度：** 入門
