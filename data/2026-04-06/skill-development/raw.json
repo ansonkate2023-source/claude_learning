@@ -13,5 +13,12 @@
     "title": "Skill authoring best practices (官方文件)",
     "url": "https://platform.claude.com/docs/en/docs/agents-and-tools/agent-skills/best-practices",
     "source": "Anthropic 官方"
+  },
+  {
+    "title": "We Built a Skills Optimizer, Here's What We Learned About Claude Code",
+    "url": "https://aaroneaton.com/walkthroughs/claudecode-skill-evolution-retrospective/",
+    "source": "aaroneaton.com",
+    "published": "2026-04-06",
+    "new": true
   }
 ]
