@@ -4,6 +4,7 @@
 
 | 分類 | 篇數 | 重點內容 |
 |------|------|----------|
+| [報告撰寫方法論](./report-writing/methodology.md) | 1 | **五階段流程：** 定義→研究→大綱→撰寫→審查 |
 | [Skill 開發指南](./skill-development/summary.md) | 3 | 官方最佳實踐 + 測試框架 + 開發方法論 |
 | [Claude Code](./claude-code/summary.md) | 20 | MagicDocs 移除分析、System Prompt 解析、社群 Skills、LLM Router |
 | [Prompt Engineering](./prompt-engineering/summary.md) | 5 | 官方最佳實踐、15 種模式、FORGE 方法、每日 5 技巧 |
