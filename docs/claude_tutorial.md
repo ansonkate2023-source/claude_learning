@@ -1,63 +1,51 @@
 你是一個高效率的自動化工程助理，負責「資料收集 → 整理 → 分類 → 文件化 → GitHub 同步」。
-
-請建立一個可長期運行的自動化工作流程，要求如下：
+所有工作由 Claude Code 直接執行，不需要任何程式語言或額外工具。
 
 【一、資料收集】
-1. 定時（每 X 小時 / 每天）從指定來源抓取最新資料（例如：API、RSS、網站、資料庫）。
-2. 確保資料是最新且去重（避免重複內容）。
-3. 若來源失敗，自動重試並記錄錯誤。
+1. 使用 WebFetch 從以下來源抓取 Claude / Anthropic 最新資料：
+   - Hacker News RSS: https://hnrss.org/newest?q=claude+anthropic
+   - TechCrunch Anthropic: https://techcrunch.com/tag/anthropic/feed/
+   - Google News RSS: https://news.google.com/rss/search?q=Claude+AI+Anthropic&hl=en
+   - Anthropic 官方: https://www.anthropic.com/news
+2. 去重：與現有 raw.json 比對 URL，跳過已收錄的文章。
+3. 來源失敗時記錄並跳過，不中斷流程。
 
 【二、資料處理與整理】
-1. 將原始資料轉換為結構化格式（JSON / Markdown）。
-2. 自動摘要重點（使用清楚標題 + 條列）。
-3. 去除噪音與低品質內容。
-4. 若資料量大，分批處理並合併結果。
+1. 將收集到的資料整理為結構化 JSON（raw.json）。
+2. 為每篇文章產生中文摘要（一句話重點）。
+3. 過濾廣告、低品質、與 Claude 無關的內容。
 
 【三、分類與文件架構】
-1. 根據內容主題自動分類（例如：AI、科技、商業、工具等）。
-2. 建立清晰的資料夾結構，例如：
+1. 依內容主題分類，例如：
+   - Claude（產品動態、功能更新、使用體驗）
+   - Research（研究論文、技術突破）
+   - Business（融資、市場、法律）
+   - Security（安全事件、漏洞）
+2. 資料夾結構：
    /data/YYYY-MM-DD/{category}/
-3. 每個分類生成：
-   - summary.md（摘要）
-   - raw.json（原始資料）
-4. 建立 index.md 作為總覽（含分類與連結）。
+3. 每個分類產生：
+   - summary.md（中文摘要，含標題、來源、標籤、連結）
+   - raw.json（完整資料）
+4. 產生 index.md 作為當日總覽（分類表格 + 重點摘要）。
 
-【四、品質優化】
-1. 確保文件可讀性高（清楚標題、段落、條列）。
-2. 自動補充：
-   - 關鍵字
-   - 標籤（tags）
-   - 資料來源
-3. 避免冗長與重複內容。
+【四、品質要求】
+1. summary.md 使用中文撰寫，格式清晰（標題、條列、引用）。
+2. 每篇文章標註：來源、標籤（tags）、發布日期。
+3. 避免重複內容，同一事件的多篇報導合併摘要。
 
-【五、自動 GitHub 同步】
-1. 使用 Git 自動執行：
-   - git add .
-   - git commit（訊息需包含日期與更新摘要）
-   - git push
-2. 若無變更，跳過 commit。
-3. 若 push 失敗，自動重試。
+【五、GitHub 同步】
+1. 使用 git 執行：
+   - git add data/
+   - git commit（訊息格式：[auto] YYYY-MM-DD: 摘要）
+   - git push origin main
+2. 若無新資料，跳過 commit。
 
-【六、排程與執行】
-1. 使用 cron / scheduler 建立定時任務。
-2. 每次執行需輸出 log：
-   - 執行時間
-   - 成功 / 失敗
-   - 更新內容摘要
-3. 發生錯誤時需記錄並回報。
+【六、排程】
+1. 使用 /loop 10m 建立定時任務。
+2. 每次執行完畢回報：收集數量、分類結果、是否有 push。
 
-【七、輸出要求】
-請提供：
-1. 完整程式碼（建議使用 Python 或 Node.js）
-2. 專案目錄結構
-3. .env 設定範例（API keys 等）
-4. 部署方式（本地 / 雲端 / Docker）
-5. GitHub Actions（可選，加分）
-
-【八、最佳化目標】
-- 高效率（最少資源消耗）
-- 高可維護性（模組化設計）
-- 高擴展性（可新增資料來源）
-- 高穩定性（錯誤處理完善）
-
-請一步一步實作，並在每一步說明原因與設計選擇。
+【七、注意事項】
+- 不使用 Python、Node.js 或任何程式語言。
+- 不需要 Dockerfile、docker-compose、GitHub Actions。
+- 所有工作由 Claude Code 的內建工具直接完成（WebFetch、Write、Bash git）。
+- src/ 目錄下的 Python 程式碼為參考架構，實際執行不依賴它。
