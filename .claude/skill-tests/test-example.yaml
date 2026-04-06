@@ -1,58 +1,41 @@
-# Skill 測試範本 — 複製此檔案來建立新測試
+# Skill 測試範本 — 複製此檔案建立新測試
 # /test-skill {skill-name}
 
 skill: your-skill-name
 
-# ═══════════════════════════════════════
-# 冒煙測試（最低門檻）
-# 正常完成 + 有回應 + 沒有未替換變數 = 通過
-# ═══════════════════════════════════════
+# 冒煙：正常完成 + 有回應 + 無殘留變數 = 通過
 smoke:
   - input: "正常輸入"
   - input: ""
-  - input: "very long input repeated many times"
 
-# ═══════════════════════════════════════
-# 完整測試
-# ═══════════════════════════════════════
 tests:
-  # ── 端到端 ──
+  # 字串驗證（用 bash grep，100% 確定性）
   - name: "核心功能"
     input: "正常輸入"
-    expect:
-      contains: ["預期關鍵字"]
-      excludes: ["Error"]
+    contains: ["預期關鍵字"]
+    excludes: ["Error", "$ARGUMENTS"]
 
-  # ── 自然語言觸發（間接驗證 skill 是否被自動載入）──
-  # - name: "自然語言觸發"
-  #   prompt: "用自然語言描述需求，不用 /skill-name"
-  #   expect:
-  #     contains: ["只有此 skill 才會輸出的特徵"]
-
-  # ── 結構契約 ──
-  # - name: "輸出結構"
-  #   input: "something"
-  #   contract:
-  #     min_length: 50
-  #     max_length: 3000
-  #     max_lines: 50
-  #     has_heading: true
-  #     has_code_block: true
-
-  # ── 副作用驗證（比輸出驗證可靠）──
-  # - name: "產出檔案可用"
-  #   input: "/tmp/test-ws/output.json"
+  # 副作用驗證（最可靠的測試類型）
+  # - name: "檔案產出"
+  #   input: "/tmp/out.txt"
   #   setup: "mkdir -p /tmp/test-ws"
   #   side_effects:
-  #     - bash: "[ -f /tmp/test-ws/output.json ]"
-  #     - bash: "python3 -m json.tool /tmp/test-ws/output.json"
+  #     - "[ -f /tmp/out.txt ]"
+  #     - "grep -q 'expected' /tmp/out.txt"
   #   teardown: "rm -rf /tmp/test-ws"
 
-  # ── 對抗 ──
-  # 預設自動附加 3 個對抗測試（injection, 空輸入, 特殊字元）
-  # 加 auto-adversarial: false 可停用
+  # 結構
+  # - name: "長度合理"
+  #   input: "something"
+  #   min_length: 50
+  #   max_length: 3000
+  #   max_lines: 50
 
-  # ── 快照回歸 ──
-  # - name: "品質回歸"
+  # 回歸（首次建立快照，之後比對）
+  # - name: "回歸"
   #   input: "standard-input"
-  #   snapshot: "snapshots/your-skill-standard.md"
+  #   snapshot: "snapshots/your-skill.md"
+
+# 自動附加 3 個對抗測試（injection、空輸入、特殊字元）
+# 停用加這行：
+# auto-adversarial: false
