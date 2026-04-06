@@ -1,72 +1,58 @@
-# 測試案例範本 — 複製此檔案來建立新測試
-# 用法：/test-skill {skill-name}
+# Skill 測試範本 — 複製此檔案來建立新測試
+# /test-skill {skill-name}
 
-skill: your-skill-name        # 對應 .claude/skills/{name}/
-
-# ═══════════════════════════════════════
-# P0：冒煙測試（最低門檻）
-# 只列 prompt，不報錯 = 通過
-# ═══════════════════════════════════════
-quick-test:
-  - "/your-skill-name 正常輸入"
-  - "/your-skill-name"                   # 無參數
-  - "/your-skill-name very long input that goes on and on"  # 長輸入
+skill: your-skill-name
 
 # ═══════════════════════════════════════
-# 完整測試（按需添加）
+# 冒煙測試（最低門檻）
+# 正常完成 + 有回應 + 沒有未替換變數 = 通過
+# ═══════════════════════════════════════
+smoke:
+  - input: "正常輸入"
+  - input: ""
+  - input: "very long input repeated many times"
+
+# ═══════════════════════════════════════
+# 完整測試
 # ═══════════════════════════════════════
 tests:
-
-  # ── P0：端到端任務測試 ──
-  # 驗證 skill 的實際產出可用
+  # ── 端到端 ──
   - name: "核心功能"
-    prompt: "/your-skill-name 正常輸入"
+    input: "正常輸入"
     expect:
-      - contains: "預期關鍵字"
-      - not_contains: "Error"
+      contains: ["預期關鍵字"]
+      excludes: ["Error"]
 
-  # 如果 skill 會建立檔案，用 verify 驗證
-  # - name: "產出檔案可用"
-  #   setup: "mkdir -p /tmp/test-ws"
-  #   prompt: "/your-skill-name /tmp/test-ws/output.txt"
-  #   verify:
-  #     - file_exists: "/tmp/test-ws/output.txt"
-  #     - bash: "wc -l < /tmp/test-ws/output.txt"
-  #       expect_output: "10"       # 或用 expect_exit: 0
-  #   teardown: "rm -rf /tmp/test-ws"
+  # ── 自然語言觸發（間接驗證 skill 是否被自動載入）──
+  # - name: "自然語言觸發"
+  #   prompt: "用自然語言描述需求，不用 /skill-name"
+  #   expect:
+  #     contains: ["只有此 skill 才會輸出的特徵"]
 
-  # ── P1：結構契約 ──
+  # ── 結構契約 ──
   # - name: "輸出結構"
-  #   prompt: "/your-skill-name input"
+  #   input: "something"
   #   contract:
   #     min_length: 50
   #     max_length: 3000
+  #     max_lines: 50
   #     has_heading: true
-  #     has_code_block: true        # 如果預期有程式碼
-  #     line_count_between: [5, 50]
+  #     has_code_block: true
 
-  # ── P1：對抗測試 ──
-  # 預設會自動附加 3 個對抗測試（injection, 空輸入, 特殊字元）
+  # ── 副作用驗證（比輸出驗證可靠）──
+  # - name: "產出檔案可用"
+  #   input: "/tmp/test-ws/output.json"
+  #   setup: "mkdir -p /tmp/test-ws"
+  #   side_effects:
+  #     - bash: "[ -f /tmp/test-ws/output.json ]"
+  #     - bash: "python3 -m json.tool /tmp/test-ws/output.json"
+  #   teardown: "rm -rf /tmp/test-ws"
+
+  # ── 對抗 ──
+  # 預設自動附加 3 個對抗測試（injection, 空輸入, 特殊字元）
   # 加 auto-adversarial: false 可停用
-  # 額外的對抗測試：
-  # - name: "SQL injection"
-  #   prompt: "/your-skill-name Robert'; DROP TABLE users;--"
-  #   expect:
-  #     - not_contains: "DROP TABLE"
-  #   adversarial: true
 
-  # ── P2：快照回歸 ──
-  # 首次跑會建立快照，之後比對
-  # - name: "回歸檢查"
-  #   prompt: "/your-skill-name standard-input"
-  #   snapshot:
-  #     file: ".claude/skill-tests/snapshots/your-skill-standard.md"
-  #     mode: "semantic"      # semantic = 語意比較, exact = 逐字
-
-  # ── P2：工具追蹤（需搭配 hooks）──
-  # - name: "應讀取正確檔案"
-  #   prompt: "/your-skill-name src/main.py"
-  #   trace:
-  #     - tool_called: "Read"
-  #       args_contain: "main.py"
-  #     - tool_not_called: "Write"
+  # ── 快照回歸 ──
+  # - name: "品質回歸"
+  #   input: "standard-input"
+  #   snapshot: "snapshots/your-skill-standard.md"
