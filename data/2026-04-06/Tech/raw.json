@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Why Switzerland has 25 Gbit internet and America doesn't",
+    "url": "https://sschueller.github.io/posts/the-free-market-lie/",
+    "content": "Analysis of infrastructure policy differences enabling Switzerland's superior broadband capabilities",
+    "source": "Hacker News",
+    "published": "2026-04-05T18:29:47Z",
+    "tags": ["tech", "infrastructure", "policy"],
+    "category": "Tech"
+  },
+  {
+    "title": "People would rather have an Amazon warehouse in their backyard than a data center",
+    "url": "https://techcrunch.com/2026/04/03/people-would-rather-have-an-amazon-warehouse-in-their-backyard-than-a-data-center/",
+    "content": "A new poll shows that the debate over data centers is far from settled.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-03T19:20:36Z",
+    "tags": ["tech", "data-centers", "infrastructure"],
+    "category": "Tech"
+  },
+  {
+    "title": "Anthropic took down thousands of GitHub repos trying to yank its leaked source code",
+    "url": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/",
+    "content": "Anthropic executives said it was an accident and retracted the bulk of the takedown notices.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-01T22:12:13Z",
+    "tags": ["tech", "security", "github"],
+    "category": "Tech"
+  }
+]

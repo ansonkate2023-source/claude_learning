@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Apex Protocol – An open MCP-based standard for AI agent trading",
+    "url": "https://apexstandard.org/",
+    "content": "Open MCP-based standard for AI agent trading",
+    "source": "Hacker News",
+    "published": "2026-04-06T00:50:32Z",
+    "tags": ["ai", "protocol", "agents"],
+    "category": "AI"
+  },
+  {
+    "title": "Show HN: I built a tiny LLM to demystify how language models work",
+    "url": "https://github.com/arman-bd/guppylm",
+    "content": "9M parameter LLM with 60K synthetic conversations, ~130 lines of PyTorch, trains in 5 minutes on free Colab",
+    "source": "Hacker News",
+    "published": "2026-04-06T00:20:12Z",
+    "tags": ["ai", "llm", "education"],
+    "category": "AI"
+  },
+  {
+    "title": "Show HN: Gemma Gem – AI model embedded in a browser – no API keys, no cloud",
+    "url": "https://github.com/kessler/gemma-gem",
+    "content": "Chrome extension loading Google's Gemma 4 (2B) via WebGPU with tools to interact with webpages, read content, take screenshots, and execute JavaScript",
+    "source": "Hacker News",
+    "published": "2026-04-06T00:14:37Z",
+    "tags": ["ai", "browser", "webgpu"],
+    "category": "AI"
+  },
+  {
+    "title": "Gemma 4 on iPhone",
+    "url": "https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337",
+    "content": "Google's Gemma 4 language model available as iPhone application",
+    "source": "Hacker News",
+    "published": "2026-04-05T18:45:53Z",
+    "tags": ["ai", "mobile", "llm"],
+    "category": "AI"
+  },
+  {
+    "title": "OpenAI's fall from grace as investors race to Anthropic",
+    "url": "https://www.latimes.com/business/story/2026-04-01/openais-shocking-fall-from-grace-as-investors-race-to-anthropic",
+    "content": "Capital shifts from OpenAI toward Anthropic amid competitive dynamics in AI development",
+    "source": "Hacker News",
+    "published": "2026-04-05T23:33:01Z",
+    "tags": ["ai", "business", "anthropic"],
+    "category": "AI"
+  },
+  {
+    "title": "Copilot is 'for entertainment purposes only,' according to Microsoft's terms of use",
+    "url": "https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/",
+    "content": "AI skeptics aren't the only ones warning users not to unthinkingly trust models' outputs — that's what the AI companies say themselves in their terms of service.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-05T18:51:37Z",
+    "tags": ["ai", "microsoft", "policy"],
+    "category": "AI"
+  },
+  {
+    "title": "In Japan, the robot isn't coming for your job; it's filling the one nobody wants",
+    "url": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world/",
+    "content": "Driven by labor shortages, Japan is pushing physical AI from pilot projects into real-world deployment.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-05T14:00:00Z",
+    "tags": ["ai", "robotics", "japan"],
+    "category": "AI"
+  },
+  {
+    "title": "Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage",
+    "url": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
+    "content": "It's about to become more expensive for Claude Code subscribers to use Anthropic's coding assistant with OpenClaw and other third-party tools.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-04T16:32:22Z",
+    "tags": ["ai", "anthropic", "pricing"],
+    "category": "AI"
+  },
+  {
+    "title": "Anthropic buys biotech startup Coefficient Bio in $400M deal",
+    "url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
+    "content": "Anthropic has purchased the stealth biotech AI startup Coefficient Bio in a $400 million stock deal.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-03T20:28:40Z",
+    "tags": ["ai", "anthropic", "acquisition", "biotech"],
+    "category": "AI"
+  },
+  {
+    "title": "Microsoft takes on AI rivals with three new foundational models",
+    "url": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+    "content": "MAI released models that can transcribe voice into text as well as generate audio and images after the group's formation six months ago.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-02T16:48:16Z",
+    "tags": ["ai", "microsoft", "models"],
+    "category": "AI"
+  },
+  {
+    "title": "Google now lets you direct avatars through prompts in its Vids app",
+    "url": "https://techcrunch.com/2026/04/02/google-now-lets-you-direct-avatars-through-prompts-in-its-vids-app/",
+    "content": "Google is adding a way to customize and instruct avatars for video creation in the Vids app.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-02T16:00:00Z",
+    "tags": ["ai", "google", "video"],
+    "category": "AI"
+  },
+  {
+    "title": "The Facebook insider building content moderation for the AI era",
+    "url": "https://techcrunch.com/2026/04/03/moonbounce-fundraise-content-moderation-for-the-ai-era/",
+    "content": "Moonbounce has raised $12 million to grow its AI control engine that converts content moderation policies into consistent, predictable AI behavior.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-03T14:00:15Z",
+    "tags": ["ai", "moderation", "startup"],
+    "category": "AI"
+  },
+  {
+    "title": "AI companies are building huge natural gas plants to power data centers",
+    "url": "https://techcrunch.com/2026/04/03/ai-companies-are-building-huge-natural-gas-plants-to-power-data-centers-what-could-go-wrong/",
+    "content": "Meta, Microsoft, and Google are all betting big on new natural gas power plants to run their AI data centers. They may regret it.",
+    "source": "TechCrunch AI",
+    "published": "2026-04-03T19:48:22Z",
+    "tags": ["ai", "infrastructure", "energy"],
+    "category": "AI"
+  }
+]
