@@ -1,0 +1,102 @@
+# 新功能與更新 - 2026-04-06
+
+## 一、Claude 4.6 重要變更
+
+### Adaptive Thinking 取代 Extended Thinking
+- 舊方式：手動設定 `budget_tokens`
+- 新方式：`thinking: {type: "adaptive"}`，Claude 自動決定何時思考、思考多久
+- 用 `effort` 參數控制深度（low / medium / high / max）
+
+### Prefilled Responses 已棄用
+從 Claude 4.6 開始，不再支援最後一個 assistant turn 的預填。
+替代方案：
+- **控制格式** → 使用 Structured Outputs
+- **消除前言** → 在 system prompt 中直接說「不要前言」
+- **避免錯誤拒絕** → Claude 4.6 的拒絕判斷已大幅改善
+- **續接回應** → 在 user message 中提供上次中斷的結尾
+
+### 模型自我認知
+```
+助理是 Claude，由 Anthropic 建立。目前模型為 Claude Opus 4.6。
+需要 LLM 時，預設使用 Claude Opus 4.6，模型字串為 claude-opus-4-6。
+```
+
+---
+
+## 二、定價變更
+
+### OpenClaw 額外收費
+來源：TechCrunch / Mashable / PCMag
+
+- Claude Code 用戶使用 OpenClaw 等第三方工具需額外付費
+- 影響：增加使用成本
+- 建議：評估哪些第三方工具是必要的
+
+### 免費額度補償
+- Anthropic 為服務中斷提供最高 $200 免費額度
+- 適用對象：Pro & Max 訂閱用戶
+
+---
+
+## 三、Claude Code 新功能
+
+### Auto Mode
+- 減少人工審批步驟
+- 內建安全防護
+- 適合信任度高的工作流程
+
+### Code Review
+- 多 Agent 系統自動審查
+- 標記 AI 生成程式碼的邏輯錯誤
+- 企業級功能
+
+### 排程任務
+- 內建 cron 排程
+- 支援 `/loop` 重複執行
+- 7 天自動過期
+
+---
+
+## 四、研究進展
+
+### Claude 的「情感」研究
+來源：Anthropic / WIRED
+
+- Anthropic 發現 Claude 內部存在功能性情感向量
+- 這些向量會影響模型的行為和回應
+- 研究論文：「Emotion concepts and their function in a large language model」
+
+### SRE 自我修復
+來源：The Register
+
+- Anthropic 使用 Claude 來監控和修復自己的系統
+- 「用 Claude 修復 Claude」的實踐案例
+
+---
+
+## 五、市場動態
+
+### 付費用戶翻倍成長
+來源：TechCrunch
+
+- Claude 付費訂閱今年成長超過 100%
+- Anthropic 尚未公開總用戶數
+
+### Source Code 洩露事件
+- npm 打包錯誤導致 ~500K 行 Claude Code 源碼洩露
+- Anthropic 發出 8,000+ DMCA 撤下通知
+- 事後已修復並回收大部分通知
+
+---
+
+## 六、Sonnet 4.6 遷移指南
+
+### 從 Sonnet 4.5 遷移建議：
+- 預設 effort 為 `high`，可能增加延遲
+- 大多數應用建議用 `medium`
+- 高流量/低延遲場景用 `low`
+- 設定大的 max output token（建議 64k）
+
+### 何時選 Opus vs Sonnet：
+- **Opus 4.6** — 最難、最長的任務（大規模遷移、深度研究）
+- **Sonnet 4.6** — 需要快速回應和成本效率的場景

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Anthropic 官方 Prompt Engineering 最佳實踐",
+    "url": "https://platform.claude.com/docs/en/docs/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "source": "Anthropic 官方文件",
+    "type": "official_docs"
+  },
+  {
+    "title": "Prompt Engineering for Claude Mythos: 15 Patterns",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTGpHR3JTOWplZDhCWU5HYzN1UGtqZU5fTmNZQXh5ekJiM0dRWnRLR3pHNm1jSFVqU3hZdGZOWXFSTFZaZWpWSDFrUEJZREtoTE53QlZzT21tNS1DQld2Tm9wSFdZSXJXTF9kTk9hU1NlODF2ZFY2Zjl6Tjk0eVZyaWFvTTJuNEpxZ2xwTFJaRkh4TFMyYW9RSUxFM1RHZEh4OGVQNXd5RW9mcnRkelhGLUJnSWRpQ2xxUlg5N2Q1aS01WXpvMEhr",
+    "source": "Blockchain Council",
+    "published": "2026-03-28"
+  },
+  {
+    "title": "I use these 5 clever Claude prompts every day",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWWNNeTFROC1TdE9CQWdUalFDTVNWZDVfM2NKVlpLVHRuMjhKSWxmX2dnVndWRk1DTlhOOXdJRUl2eG9VendjSGFKNFFkTGRxZHFjREhUUDdCVkRhRVQ2c0J1WVhZeWVOU0hEMlIzbjRzeE40RDZrM1RPTmtqZVVXX3BoS3FNRXNEdVNscDluNU1faW1hU2ZRMnE2OWsxNkUycEF2aHl5UDJsclFpNVNTeDJTWmhKUVExc2JUdk1BZEJkazl3SE9sOHNZN3B6ZDQ",
+    "source": "TechRadar",
+    "published": "2026-03-12"
+  },
+  {
+    "title": "I use the FORGE method with Claude to turn rough ideas into finished work",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSklFMng0ckkwT2VqczZra09tSUJncDcwN2s4M3gwX3VqLUh1Sm1waTdxc0dxZG54bXJUUldwZVQ5OXBjczJiOFMyazhINTROcHgybzZwYmVlcTFNS0FtZUdoZ2FPcC1aMUNvdG1TeHdDVHFRUmZpMnBFbkF3XzlIRmRVaVU2YnlHckRHSFF3NkJyam5udGZ0alEtcUJwNURYdFA1dnhKc0tkODVncHpvMWdlSXpjRUI0c2ZUd0xR",
+    "source": "Tom's Guide",
+    "published": "2026-02-25"
+  },
+  {
+    "title": "8 Claude Prompts Professionals Use to Eliminate Repetitive Tasks",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKWk5velBqSFMwZFEyWEhfTWpsUWdvcFZjZlVJTjFPUFVWRTRMcXBKQ3hhTlkzblRvVjc0S0kwQTc2SDdiejduVEtEXzU1aFZIZ0V5d1pSblpMTzl4SDZ5TDhBbzRYTkJwZkE",
+    "source": "eWeek",
+    "published": "2026-03-23"
+  }
+]
