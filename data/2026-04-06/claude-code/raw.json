@@ -155,5 +155,19 @@
     "source": "Hacker News",
     "published": "2026-04-06",
     "new": true
+  },
+  {
+    "title": "Codex and Claude Code Can Work Together",
+    "url": "https://www.theinformation.com/articles/codex-claude-code-together",
+    "source": "The Information",
+    "published": "2026-04-06",
+    "new": true
+  },
+  {
+    "title": "Nimbalyst: The Visual Workspace for Building with Claude Code and Codex",
+    "url": "https://www.sitepoint.com/nimbalyst-claude-code-codex/",
+    "source": "SitePoint",
+    "published": "2026-04-06",
+    "new": true
   }
 ]

@@ -290,3 +290,31 @@ Anthropic 內部工具，用來在 Claude Code 回應後自動啟動子代理更
 **可馬上用：** 用 skill 框架和 CLAUDE.md 取代任何自動文件生成的嘗試
 
 **難度：** 進階
+
+---
+
+## 十二、Codex + Claude Code 可以一起用（新）
+
+來源：The Information
+
+OpenAI 的 Codex 和 Claude Code 不是互斥的——可以在同一個工作流中搭配使用：
+- Codex 處理某些特定任務
+- Claude Code 處理其他任務
+- 根據各自優勢分工
+
+**可馬上用：** 不需要二選一，根據任務選擇最適合的工具
+
+**難度：** 進階
+
+---
+
+## 十三、Nimbalyst — Claude Code 的視覺化工作空間（新）
+
+來源：SitePoint
+
+Nimbalyst 是一個視覺化介面，可以同時操作 Claude Code 和 Codex：
+- 拖放式工作流設計
+- 視覺化管理多個 AI agent 的任務分配
+- 適合非工程師也能操作 AI 編碼工具
+
+**難度：** 入門
