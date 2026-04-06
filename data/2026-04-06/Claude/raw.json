@@ -1,0 +1,155 @@
+[
+  {
+    "title": "Claude Code's innards revealed as source code leaked online",
+    "url": "https://www.theregister.com/2026/04/06/claude-code-source-leak/",
+    "content": "Approximately 500,000 lines of Claude Code source accidentally exposed through npm packaging error",
+    "source": "The Register",
+    "published": "2026-04-06T00:02:00Z",
+    "tags": ["claude", "source-code", "security"],
+    "category": "Claude"
+  },
+  {
+    "title": "Anthropic leak reveals Claude Code tracking user frustration and raises new questions about AI privacy",
+    "url": "https://www.scientificamerican.com/article/anthropic-claude-code-leak/",
+    "content": "Leaked code shows system monitoring user sentiment and emotional state during interactions",
+    "source": "Scientific American",
+    "published": "2026-04-02T15:40:00Z",
+    "tags": ["claude", "privacy", "research"],
+    "category": "Claude"
+  },
+  {
+    "title": "Anthropic Says That Claude Contains Its Own Kind of Emotions",
+    "url": "https://www.wired.com/story/anthropic-claude-emotions/",
+    "content": "Research reveals functional emotional vectors within Claude influencing model behavior and responses",
+    "source": "WIRED",
+    "published": "2026-04-02T16:00:00Z",
+    "tags": ["claude", "research", "emotions"],
+    "category": "Claude"
+  },
+  {
+    "title": "Emotion concepts and their function in a large language model",
+    "url": "https://www.anthropic.com/research/emotion-concepts",
+    "content": "Anthropic research paper examining emotional concepts and their behavioral influence in Claude",
+    "source": "Anthropic",
+    "published": "2026-04-02T16:50:28Z",
+    "tags": ["claude", "research", "paper"],
+    "category": "Claude"
+  },
+  {
+    "title": "Claude Code Source Leaked via npm Packaging Error, Anthropic Confirms",
+    "url": "https://thehackernews.com/2026/04/claude-code-source-leaked.html",
+    "content": "Technical misconfiguration in npm package repository led to unintended code release",
+    "source": "The Hacker News",
+    "published": "2026-04-01T06:12:00Z",
+    "tags": ["claude", "security", "npm"],
+    "category": "Claude"
+  },
+  {
+    "title": "Anthropic Races to Contain Leak of Code Behind Claude AI Agent",
+    "url": "https://www.wsj.com/articles/anthropic-claude-code-leak",
+    "content": "Company working urgently to mitigate damage from accidental source code exposure",
+    "source": "WSJ",
+    "published": "2026-04-01T17:23:00Z",
+    "tags": ["claude", "business", "security"],
+    "category": "Claude"
+  },
+  {
+    "title": "Anthropic issues 8,000 takedown requests after Claude AI source code leak",
+    "url": "https://www.msn.com/en-us/news/anthropic-takedown-claude/",
+    "content": "Extensive DMCA enforcement action following widespread distribution of proprietary code",
+    "source": "MSN",
+    "published": "2026-04-05T12:29:14Z",
+    "tags": ["claude", "legal", "dmca"],
+    "category": "Claude"
+  },
+  {
+    "title": "Here's what that Claude Code source leak reveals about Anthropic's plans",
+    "url": "https://arstechnica.com/ai/2026/04/claude-code-leak-analysis/",
+    "content": "Analysis of exposed systems providing insights into Anthropic's product roadmap and architecture",
+    "source": "Ars Technica",
+    "published": "2026-04-01T20:04:04Z",
+    "tags": ["claude", "analysis", "roadmap"],
+    "category": "Claude"
+  },
+  {
+    "title": "Anthropic Suddenly Cares Intensely About Intellectual Property After Realizing It Accidentally Leaked Claude's Source Code",
+    "url": "https://futurism.com/anthropic-claude-source-leak",
+    "content": "Anthropic launched aggressive takedown efforts after unintended exposure of proprietary Claude systems",
+    "source": "Futurism",
+    "published": "2026-04-03T12:39:46Z",
+    "tags": ["claude", "legal", "opinion"],
+    "category": "Claude"
+  },
+  {
+    "title": "I hit Claude's new usage limits — and it changed how I use AI forever",
+    "url": "https://www.tomsguide.com/ai/claude-usage-limits",
+    "content": "Users experiencing unexpected throttling of Claude Code capabilities and resources",
+    "source": "Tom's Guide",
+    "published": "2026-04-05T11:15:00Z",
+    "tags": ["claude", "usage", "user-experience"],
+    "category": "Claude"
+  },
+  {
+    "title": "Up to $200: Claude AI giving away free credits for Pro & Max users",
+    "url": "https://www.notebookcheck.net/claude-free-credits",
+    "content": "Anthropic offering complimentary usage credits to compensate subscribers during service disruptions",
+    "source": "Notebookcheck",
+    "published": "2026-04-05T12:58:00Z",
+    "tags": ["claude", "pricing", "promotion"],
+    "category": "Claude"
+  },
+  {
+    "title": "Claude subscribers will now have to pay extra to use OpenClaw",
+    "url": "https://mashable.com/article/claude-openclaw-pricing",
+    "content": "Anthropic implemented new pricing requiring separate payments for third-party tool access",
+    "source": "Mashable",
+    "published": "2026-04-05T18:03:15Z",
+    "tags": ["claude", "pricing", "openclaw"],
+    "category": "Claude"
+  },
+  {
+    "title": "Fixing Claude with Claude: Anthropic reports on AI site reliability engineering",
+    "url": "https://www.theregister.com/2026/03/19/anthropic_claude_sre/",
+    "content": "Anthropic using Claude for site reliability engineering to monitor and fix its own systems",
+    "source": "The Register",
+    "published": "2026-03-23T21:01:41Z",
+    "tags": ["claude", "sre", "engineering"],
+    "category": "Claude"
+  },
+  {
+    "title": "Anthropic hands Claude Code more control, but keeps it on a leash",
+    "url": "https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/",
+    "content": "New auto mode for Claude Code enables AI to execute tasks with fewer approvals while balancing speed with safety through built-in safeguards.",
+    "source": "TechCrunch",
+    "published": "2026-03-24T21:00:30Z",
+    "tags": ["claude", "claude-code", "features"],
+    "category": "Claude"
+  },
+  {
+    "title": "Anthropic's Claude popularity with paying consumers is skyrocketing",
+    "url": "https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing/",
+    "content": "Claude paid subscriptions have more than doubled this year, though the company hasn't disclosed total user figures.",
+    "source": "TechCrunch",
+    "published": "2026-03-28T14:15:00Z",
+    "tags": ["claude", "growth", "subscriptions"],
+    "category": "Claude"
+  },
+  {
+    "title": "Anthropic launches code review tool to check flood of AI-generated code",
+    "url": "https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/",
+    "content": "Code Review in Claude Code uses a multi-agent system to automatically analyze AI-generated code and flag logic errors for enterprise developers.",
+    "source": "TechCrunch",
+    "published": "2026-03-09T19:41:34Z",
+    "tags": ["claude", "code-review", "enterprise"],
+    "category": "Claude"
+  },
+  {
+    "title": "What Is Claude? Anthropic Doesn't Know, Either",
+    "url": "https://www.newyorker.com/magazine/2026/02/16/what-is-claude-anthropic-doesnt-know-either",
+    "content": "New Yorker piece examining what Claude is and Anthropic's understanding of its own AI system",
+    "source": "The New Yorker",
+    "published": "2026-02-23T22:59:46Z",
+    "tags": ["claude", "profile", "philosophy"],
+    "category": "Claude"
+  }
+]
