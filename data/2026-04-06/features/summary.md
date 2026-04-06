@@ -181,3 +181,17 @@ Anthropic 調整 OpenClaw 政策：
 **影響：** 使用第三方工具整合的用戶需評估成本
 
 **難度：** 入門
+
+---
+
+## 十三、Claude Code Bypass 漏洞已修復（新）
+
+來源：Let's Data Science
+
+Anthropic 修補了 Claude Code 的一個繞過漏洞：
+- 源碼洩露後被發現的安全弱點
+- 已推送修復
+
+**可馬上用：** 確保你的 Claude Code 是最新版本
+
+**難度：** 入門

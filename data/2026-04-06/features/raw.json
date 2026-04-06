@@ -64,5 +64,12 @@
     "source": "InfoWorld",
     "published": "2026-04-06",
     "new": true
+  },
+  {
+    "title": "Anthropic Patches Claude Code Bypass Vulnerability",
+    "url": "https://www.letsdatascience.com/anthropic-patches-claude-code-bypass",
+    "source": "Let's Data Science",
+    "published": "2026-04-06",
+    "new": true
   }
 ]
