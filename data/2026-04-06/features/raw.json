@@ -50,5 +50,19 @@
     "source": "MSN",
     "published": "2026-04-06",
     "new": true
+  },
+  {
+    "title": "Claude AI can now pull data from Outlook, Teams, OneDrive for free users",
+    "url": "https://www.business-standard.com/technology/claude-ai-outlook-teams-onedrive",
+    "source": "Business Standard",
+    "published": "2026-04-06",
+    "new": true
+  },
+  {
+    "title": "Anthropic cuts OpenClaw access from Claude subscriptions, offers credits to ease transition",
+    "url": "https://www.infoworld.com/article/anthropic-openclaw-credits",
+    "source": "InfoWorld",
+    "published": "2026-04-06",
+    "new": true
   }
 ]

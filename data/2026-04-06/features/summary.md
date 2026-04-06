@@ -151,3 +151,33 @@ Anthropic 推出 Claude 的 Computer Use 功能：
 - 可能帶來更強的推理和安全特性
 
 **難度：** 入門（了解即可）
+
+---
+
+## 十一、Claude 整合 Outlook / Teams / OneDrive（新）
+
+來源：Business Standard
+
+Claude AI 現在可以為免費用戶存取 Microsoft 生態系統資料：
+- 從 Outlook 拉取郵件
+- 從 Teams 讀取對話
+- 從 OneDrive 存取檔案
+
+**可馬上用：** 連接你的 Microsoft 帳號，讓 Claude 幫你整理信件和文件
+
+**難度：** 入門
+
+---
+
+## 十二、OpenClaw 定價更新 — 提供過渡期額度（新）
+
+來源：InfoWorld
+
+Anthropic 調整 OpenClaw 政策：
+- Claude 訂閱不再免費包含 OpenClaw 存取
+- 提供過渡期免費額度緩衝
+- 未來改為 pay-as-you-go 計費
+
+**影響：** 使用第三方工具整合的用戶需評估成本
+
+**難度：** 入門
