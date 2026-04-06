@@ -1,38 +1,72 @@
-# 範例：測試 explain-code skill
-# 用法：/test-skill explain-code
-# 或：  /test-skill .claude/skill-tests/test-example.yaml
+# 測試案例範本 — 複製此檔案來建立新測試
+# 用法：/test-skill {skill-name}
 
-skill: explain-code
-description: 測試 explain-code skill 的基本行為
+skill: your-skill-name        # 對應 .claude/skills/{name}/
 
+# ═══════════════════════════════════════
+# P0：冒煙測試（最低門檻）
+# 只列 prompt，不報錯 = 通過
+# ═══════════════════════════════════════
+quick-test:
+  - "/your-skill-name 正常輸入"
+  - "/your-skill-name"                   # 無參數
+  - "/your-skill-name very long input that goes on and on"  # 長輸入
+
+# ═══════════════════════════════════════
+# 完整測試（按需添加）
+# ═══════════════════════════════════════
 tests:
-  - name: "基本解釋應包含類比和圖表"
-    prompt: "/explain-code 請解釋 for loop 的概念"
-    expect:
-      - contains_any:
-          - "類比"
-          - "analogy"
-          - "比喻"
-          - "就像"
-      - contains_any:
-          - "┌"
-          - "──"
-          - "→"
-          - "diagram"
-          - "圖"
 
-  - name: "應能解釋具體檔案"
-    prompt: "/explain-code config/sources.yaml"
+  # ── P0：端到端任務測試 ──
+  # 驗證 skill 的實際產出可用
+  - name: "核心功能"
+    prompt: "/your-skill-name 正常輸入"
     expect:
-      - contains_any:
-          - "YAML"
-          - "yaml"
-          - "設定"
-          - "config"
-      - not_contains: "無法"
-
-  - name: "空參數應有合理回應"
-    prompt: "/explain-code"
-    expect:
+      - contains: "預期關鍵字"
       - not_contains: "Error"
-      - not_contains: "undefined"
+
+  # 如果 skill 會建立檔案，用 verify 驗證
+  # - name: "產出檔案可用"
+  #   setup: "mkdir -p /tmp/test-ws"
+  #   prompt: "/your-skill-name /tmp/test-ws/output.txt"
+  #   verify:
+  #     - file_exists: "/tmp/test-ws/output.txt"
+  #     - bash: "wc -l < /tmp/test-ws/output.txt"
+  #       expect_output: "10"       # 或用 expect_exit: 0
+  #   teardown: "rm -rf /tmp/test-ws"
+
+  # ── P1：結構契約 ──
+  # - name: "輸出結構"
+  #   prompt: "/your-skill-name input"
+  #   contract:
+  #     min_length: 50
+  #     max_length: 3000
+  #     has_heading: true
+  #     has_code_block: true        # 如果預期有程式碼
+  #     line_count_between: [5, 50]
+
+  # ── P1：對抗測試 ──
+  # 預設會自動附加 3 個對抗測試（injection, 空輸入, 特殊字元）
+  # 加 auto-adversarial: false 可停用
+  # 額外的對抗測試：
+  # - name: "SQL injection"
+  #   prompt: "/your-skill-name Robert'; DROP TABLE users;--"
+  #   expect:
+  #     - not_contains: "DROP TABLE"
+  #   adversarial: true
+
+  # ── P2：快照回歸 ──
+  # 首次跑會建立快照，之後比對
+  # - name: "回歸檢查"
+  #   prompt: "/your-skill-name standard-input"
+  #   snapshot:
+  #     file: ".claude/skill-tests/snapshots/your-skill-standard.md"
+  #     mode: "semantic"      # semantic = 語意比較, exact = 逐字
+
+  # ── P2：工具追蹤（需搭配 hooks）──
+  # - name: "應讀取正確檔案"
+  #   prompt: "/your-skill-name src/main.py"
+  #   trace:
+  #     - tool_called: "Read"
+  #       args_contain: "main.py"
+  #     - tool_not_called: "Write"
