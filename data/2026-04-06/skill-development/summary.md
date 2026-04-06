@@ -311,6 +311,83 @@ SKILL.md 保持在 **500 行以內**，詳細內容拆到獨立檔案：
 
 ---
 
+## 九-B、自動化測試框架（自建）
+
+官方目前沒有內建測試工具，但可以用 Skill 測試 Skill。
+
+### 架構設計
+
+```
+~/.claude/skills/test-skill/       ← 測試執行器（Skill）
+.claude/skill-tests/               ← 測試案例（YAML）
+  ├── test-greet.yaml
+  ├── test-explain-code.yaml
+  └── results/                     ← 測試報告
+      └── 2026-04-06-15-30.md
+```
+
+### 測試案例格式
+
+```yaml
+# .claude/skill-tests/test-greet.yaml
+skill: greet
+tests:
+  - name: "帶名字的問候"
+    prompt: "/greet Alice"
+    expect:
+      - contains: "Alice"              # 必須包含
+      - contains_any: ["早安", "午安"]  # 包含任一
+      - not_contains: "Error"          # 不可包含
+      - file_exists: "output.txt"      # 檔案存在
+      - file_contains:                 # 檔案內容
+          path: "output.txt"
+          text: "結果"
+```
+
+### 驗證條件類型
+
+| 條件 | 說明 | 用途 |
+|------|------|------|
+| `contains` | 輸出包含文字 | 驗證關鍵內容 |
+| `contains_any` | 包含列表中任一 | 多種合理回應 |
+| `not_contains` | 不包含文字 | 排除錯誤/洩露 |
+| `file_exists` | 檔案被建立 | 驗證副作用 |
+| `file_contains` | 檔案內容驗證 | 驗證寫入正確 |
+| `exit_code` | bash 退出碼 | 腳本執行驗證 |
+
+### 執行方式
+
+```
+/test-skill greet              # 測試單一 skill
+/test-skill test-greet.yaml    # 測試指定檔案
+/test-skill                    # 執行所有測試
+```
+
+### 測試報告範例
+
+```markdown
+# Skill 測試報告 - 2026-04-06 15:30
+
+## 摘要
+- 測試數：3 | 通過：2 ✅ | 失敗：1 ❌
+
+## 結果
+| # | 測試名稱 | 結果 |
+|---|----------|------|
+| 1 | 帶名字的問候 | ✅ PASS |
+| 2 | 不帶名字應用預設 | ✅ PASS |
+| 3 | 應包含鼓勵 | ❌ FAIL |
+```
+
+### 設計原則
+
+1. **測試案例與 Skill 分離** — 測試在 `.claude/skill-tests/`，Skill 在 `.claude/skills/`
+2. **YAML 定義** — 非工程師也能寫測試
+3. **報告持久化** — 結果存檔，可追蹤改善歷程
+4. **漸進式** — 從簡單的 contains 開始，需要時加複雜驗證
+
+---
+
 ## 十、常見模式
 
 ### 模板模式

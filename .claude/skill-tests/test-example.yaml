@@ -1,0 +1,38 @@
+# 範例：測試 explain-code skill
+# 用法：/test-skill explain-code
+# 或：  /test-skill .claude/skill-tests/test-example.yaml
+
+skill: explain-code
+description: 測試 explain-code skill 的基本行為
+
+tests:
+  - name: "基本解釋應包含類比和圖表"
+    prompt: "/explain-code 請解釋 for loop 的概念"
+    expect:
+      - contains_any:
+          - "類比"
+          - "analogy"
+          - "比喻"
+          - "就像"
+      - contains_any:
+          - "┌"
+          - "──"
+          - "→"
+          - "diagram"
+          - "圖"
+
+  - name: "應能解釋具體檔案"
+    prompt: "/explain-code config/sources.yaml"
+    expect:
+      - contains_any:
+          - "YAML"
+          - "yaml"
+          - "設定"
+          - "config"
+      - not_contains: "無法"
+
+  - name: "空參數應有合理回應"
+    prompt: "/explain-code"
+    expect:
+      - not_contains: "Error"
+      - not_contains: "undefined"

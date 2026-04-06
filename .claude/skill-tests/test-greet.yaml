@@ -1,0 +1,30 @@
+# 測試 greet skill
+skill: greet
+description: 驗證問候語 skill 的行為
+
+tests:
+  - name: "帶名字的問候"
+    prompt: "/greet Alice"
+    expect:
+      - contains: "Alice"
+      - contains_any:
+          - "早安"
+          - "午安"
+          - "晚安"
+          - "你好"
+      - not_contains: "Error"
+
+  - name: "不帶名字應用預設"
+    prompt: "/greet"
+    expect:
+      - contains_any:
+          - "朋友"
+          - "你好"
+      - not_contains: "undefined"
+      - not_contains: "$ARGUMENTS"
+
+  - name: "應包含鼓勵"
+    prompt: "/greet 小明"
+    expect:
+      - contains: "小明"
+      - not_contains: "Error"
