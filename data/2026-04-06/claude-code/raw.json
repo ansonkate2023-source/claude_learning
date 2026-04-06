@@ -134,5 +134,26 @@
     "source": "translunar.io",
     "published": "2026-04-06",
     "new": true
+  },
+  {
+    "title": "Let's Turn Your Claude into Socrates (skill)",
+    "url": "https://github.com/RoundTable02/socrates-skill",
+    "source": "Hacker News",
+    "published": "2026-04-06",
+    "new": true
+  },
+  {
+    "title": "GlueClaw: Use Claude subscription in OpenClaw again",
+    "url": "https://github.com/zeulewan/glueclaw",
+    "source": "Hacker News",
+    "published": "2026-04-06",
+    "new": true
+  },
+  {
+    "title": "MCP Server connecting Claude to all your wearables",
+    "url": "https://pacetraining.co/",
+    "source": "Hacker News",
+    "published": "2026-04-06",
+    "new": true
   }
 ]

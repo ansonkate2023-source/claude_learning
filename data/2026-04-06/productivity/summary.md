@@ -152,3 +152,46 @@ Claude 的核心差異化：
 **可馬上用：** 檢查你的用量模式，找出最耗 token 的操作
 
 **難度：** 入門
+
+---
+
+## 十、資深工程師用 Claude Code 的最佳實踐（新）
+
+來源：Reddit r/ClaudeCode
+
+資深工程師分享如何用 Claude Code「擴展自己」：
+- 用 Claude Code 同時管理多個任務線
+- 善用 CLAUDE.md 和 skill 建立團隊共享的工作流程
+- 將重複性工作封裝成 skill，自己只做決策
+
+**可馬上用：** 列出你每天重複做的 3 件事，嘗試封裝成 skill
+
+**難度：** 進階
+
+---
+
+## 十一、停止觸發用量限制的具體方法（新）
+
+來源：Twitter @0x_kaize
+
+使用者分享避免觸發 Claude 用量限制的改變：
+- 精簡 prompt，減少不必要的上下文
+- 用 `/compact` 主動壓縮對話
+- 簡單任務切到 Sonnet 省 token
+- 避免在一個 session 中做太多不相關的事
+
+**可馬上用：** 開始新任務前先 `/compact`，大任務拆成多個 session
+
+**難度：** 入門
+
+---
+
+## 十二、用 Claude Code 逆向工程 FPGA 位元流（新）
+
+來源：Hacker News / GitHub
+
+開發者用 Claude Code 成功逆向工程 Cyclone FPGA 的 CRAM 位元流映射：
+- 展示 Claude Code 在硬體工程領域的應用潛力
+- 複雜的位元操作和文件分析由 Claude 代勞
+
+**難度：** 專家

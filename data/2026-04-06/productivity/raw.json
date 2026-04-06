@@ -48,5 +48,26 @@
     "source": "BBC",
     "published": "2026-04-01",
     "new": true
+  },
+  {
+    "title": "Senior engineer best practice for scaling yourself with Claude Code",
+    "url": "https://www.reddit.com/r/ClaudeCode/s/ppF2cGWQsi",
+    "source": "Reddit r/ClaudeCode",
+    "published": "2026-04-06",
+    "new": true
+  },
+  {
+    "title": "I stopped hitting Claude's usage limits – things I changed",
+    "url": "https://twitter.com/0x_kaize/status/2038286026284667239",
+    "source": "Twitter",
+    "published": "2026-04-06",
+    "new": true
+  },
+  {
+    "title": "Reverse-engineered the FPGA bitstream using Claude Code",
+    "url": "https://github.com/14sea/Cyclone_CRAM_Mapper",
+    "source": "Hacker News",
+    "published": "2026-04-06",
+    "new": true
   }
 ]
